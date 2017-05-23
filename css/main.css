@@ -101,6 +101,13 @@ nav {
   background-position: center;
 }
 
+#imgDetail{
+  background-image: url('../assets/images/naillicious.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
 #txtContainer{
   width: 50%;
   height: 100%;
@@ -213,13 +220,6 @@ nav {
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
   transition: all 0.5s;
-}
-
-#naillicious{
-  width: 120%;
-  left: -50px;
-  top: -30px;
-  position: relative;
 }
 
 .index{

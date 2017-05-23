@@ -10,19 +10,386 @@ html, body {
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  background: rgba(26,35,126 ,1) url('../assets/images/home_3.jpg') no-repeat center center fixed;
+  background-color: #DCDCDC;
   background-size: cover;
 
   color: rgba(232,234,246 ,1);
 }
 
-.intro {
-  width: 90vw;
+nav {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 1;
+}
 
-  padding: 1rem;
-  margin-top: 1rem;
+navMobile{
+  display: none;
+}
 
-  background: rgba(242,169,10,1);
-  color: rgba(130,88,4,1);
+#navigation {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  height: 80%;
+  top: 120px;
+  left: 14%;
+  position: absolute;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 0;
+}
+
+#imgContainer{
+  width: 50%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+#txtContainer{
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#contact{
+  width: 50%;
+  height: 80%;
+  float: left;
+  padding-left: 20px;
+  overflow-y: auto;
+}
+
+#map{
+  width: 50%;
+  height: 80%;
+  float: left;
+  
+}
+
+.content{
+  background-color: #FFF;
+  margin: 10px;
+  width: 23%;
+  height: 40%;
+  float: left;
+}
+
+#content1{
+  background-image: url('../assets/images/naillicious.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content2{
+  background-image: url('../assets/images/bredaLive.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content3{
+  background-image: url('../assets/images/businesscard.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#content4{
+  background-image: url('../assets/images/gloaskes.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#content5{
+  background-image: url('../assets/images/gonzo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content6{
+  background-image: url('../assets/images/lowFitment.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#content7{
+  background-image: url('../assets/images/rietveld.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#content8{
+  background-image: url('../assets/images/society.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#content9{
+  background-image: url('../assets/images/standApp.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content10{
+  background-image: url('../assets/images/staOp.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content11{
+  background-image: url('../assets/images/tweetyDesigns.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#content12{
+  background-image: url('../assets/images/xStarCups.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#containerPortfolio{
+  background-color: #DCDCDC;
+  height: 80%;
+}
+
+.content:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  transition: all 0.5s;
+}
+
+#naillicious{
+  width: 120%;
+  left: -50px;
+  top: -30px;
+  position: relative;
+}
+
+.index{
+  padding-top: 100px;
+  background-color: white;
+  height: 100%;
+}
+
+.contactIcons{
+  width: 30px;
+  clear: left;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+#house{
+  margin-top: 20px;
+}
+
+.socialMediaIcons{
+  width: 50px;
+  clear: left;
+  margin-top: 20px;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.socialMediaIcons:hover{
+  width: 60px;
+}
+
+form{
+  margin-top: 10px;
+}
+
+#message{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 80%;
+    padding: 3px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    font: 0.7vw Raleway;
+    padding-top: 22px;
+    height: 40px;
+}
+
+#name, #email{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 80%;
+    padding: 3px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 0.7vw Raleway;
+    height: 20px;
+}
+
+.verzenden{
+    background-color: white;
+    display: block;
+    width: 40%;
+    padding: 10px;
+    font: 1vw Raleway;
+    border: 1px solid black;
+    color: black;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+
+}
+
+.verzenden:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    height: 80px;
+  }
+
+  .container {
+    width: 80%;
+    height: 85%;
+    top: 90px;
+    left: 12%;
+  }
+
+  #imgContainer{
+    width: 40%;
+  }
+  
+  #txtContainer{
+    width: 60%;
+    padding: 10px;
+  }
+
+  #map{
+    height: 80%;
+  }
+
+  .content{
+    margin: 5px;
+    width: 31%;
+    height: 45%;
+  }
+
+  .contactIcons{
+    width: 20px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+
+  #house{
+    margin-top: 10px;
+  }
+
+  .socialMediaIcons{
+    width: 25px;
+    margin-top: 10px;
+  }
+
+  form{
+    margin-top: 10px;
+  }
+
+  #message{
+      width: 90%;
+      font: 1vw Raleway;
+  }
+
+  #name, #email{
+      width: 90%;
+      font: 1vw Raleway;
+  } 
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    height: 50px;
+  }
+
+  .container {
+    width: 95%;
+    height: 225%;
+    top: 60px;
+    left: 3%;
+  }
+
+  #imgContainer{
+    width: 100%;
+    height: 200px;
+  }
+
+  #txtContainer{
+    width: 100%;
+    height: 100%;
+  }
+
+  #contact{
+    width: 100%;
+    height: 320px;
+    padding: 20px;
+  }
+
+  #map{
+    width: 100%;
+    height: 50%;    
+  }
+
+  .content{
+    margin: 5px;
+    width: 96%;
+    height: 60%;
+  }
+
+  .contactIcons{
+    width: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  #house{
+    margin-top: 10px;
+  }
+
+  .socialMediaIcons{
+    width: 25px;
+    margin-top: 10px;
+  }
+
+  form{
+    margin-top: 10px;
+  }
+
+  #message{
+      width: 95%;
+      font: 2vw Raleway;
+      height: 40px;
+  }
+
+  #name, #email{
+      width: 95%;
+      font: 2vw Raleway;
+  }
+
+  .verzenden{
+      font: 2vw Raleway;
+      margin: auto;
+  }
+
 }
